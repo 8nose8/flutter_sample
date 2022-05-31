@@ -20,6 +20,9 @@ dependencies:
   freezed_annotation: ^1.1.0
   json_annotation: ^4.4.0
 
+  qr_flutter: ^4.0.0
+  charts_flutter: ^0.12.0
+
   cupertino_icons: ^1.0.2
 
 dev_dependencies:

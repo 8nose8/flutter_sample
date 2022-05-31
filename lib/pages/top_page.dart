@@ -31,7 +31,8 @@ class TopPage extends StatelessWidget {
                 ),
               ),
               onTap: () {
-                Navigator.of(context).pushNamed(element.route);
+                Navigator.of(context)
+                    .pushNamed(element.route, arguments: Argumetn(0));
               },
             );
           },
@@ -45,6 +46,14 @@ class TopPage extends StatelessWidget {
     return [
       TopPageElement(title: 'drag & drop', route: Routes.routeDragDrop),
       TopPageElement(title: 'stop watch', route: Routes.routeStopWatch),
+      TopPageElement(title: 'qr generate', route: Routes.routeQrGenerate),
+      TopPageElement(title: 'chart', route: Routes.routeChart),
     ];
   }
+}
+
+class Argumetn {
+  final int index;
+
+  Argumetn(this.index);
 }
