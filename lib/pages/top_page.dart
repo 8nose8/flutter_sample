@@ -48,6 +48,7 @@ class TopPage extends StatelessWidget {
       TopPageElement(title: 'stop watch', route: Routes.routeStopWatch),
       TopPageElement(title: 'qr generate', route: Routes.routeQrGenerate),
       TopPageElement(title: 'chart', route: Routes.routeChart),
+      TopPageElement(title: 'gap', route: Routes.routeGap),
     ];
   }
 }

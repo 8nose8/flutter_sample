@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_samples/pages/chart/chart_page.dart';
 import 'package:flutter_samples/pages/drag_drop/drag_drop_sample_page.dart';
+import 'package:flutter_samples/pages/gap/gap_page.dart';
 import 'package:flutter_samples/pages/qr_generate/qr_generate_page.dart';
 import 'package:flutter_samples/pages/stop_watch/stop_watch_page.dart';
 import 'package:flutter_samples/pages/top_page.dart';
@@ -32,6 +33,7 @@ class Routes {
   static const String routeStopWatch = '/stop_watch';
   static const String routeQrGenerate = '/qr_generater';
   static const String routeChart = '/chart';
+  static const String routeGap = '/gap';
 
   static Route<dynamic> generate(RouteSettings settings) {
     switch (settings.name) {
@@ -58,6 +60,11 @@ class Routes {
       case routeChart:
         return MaterialPageRoute(
           builder: (_) => const ChartPage(),
+          settings: settings,
+        );
+      case routeGap:
+        return MaterialPageRoute(
+          builder: (_) => const GapPage(),
           settings: settings,
         );
     }
